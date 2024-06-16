@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<AutoURL>false</AutoURL>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<ShowTitle>false</ShowTitle>
+	<ShowCloseButton>false</ShowCloseButton>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОсновнаяВертикальнаяГруппа" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная вертикальная группа</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОсновнаяВертикальнаяГруппаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияПодтверждение" id="3">
+					<Font ref="style:ШрифтОбычныйПолужирный16РМК" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подтвердите добавление товара</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="ДекорацияПодтверждениеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДекорацияПодтверждениеРасширеннаяПодсказка" id="5"/>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияНаименование" id="25">
+					<Width>48</Width>
+					<TextColor>web:DarkRed</TextColor>
+					<Font ref="style:ШрифтОбычныйПолужирный18РМК" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация наименование</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="ДекорацияНаименованиеКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ДекорацияНаименованиеРасширеннаяПодсказка" id="27"/>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияВертикальныйОтступ" id="11">
+					<TextColor>style:ЦветОсобогоТекстаРМК</TextColor>
+					<Font ref="style:ШрифтОбычныйПолужирный12РМК" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияВертикальныйОтступКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ДекорацияВертикальныйОтступРасширеннаяПодсказка" id="13"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаВес" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа вес</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalStretch>false</VerticalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<HorizontalSpacing>None</HorizontalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВесРасширеннаяПодсказка" id="7"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияВес" id="8">
+							<Font ref="style:ШрифтОбычныйПолужирный18РМК" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вес: </v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<ContextMenu name="ДекорацияВесКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ДекорацияВесРасширеннаяПодсказка" id="10"/>
+						</LabelDecoration>
+						<LabelDecoration name="ДекорацияВесОтступ" id="19">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияВесОтступКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ДекорацияВесОтступРасширеннаяПодсказка" id="21"/>
+						</LabelDecoration>
+						<LabelField name="ТекущийВес" id="14">
+							<DataPath>ТекущийВес</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Width>14</Width>
+							<VerticalStretch>true</VerticalStretch>
+							<Border width="2">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+							</Border>
+							<Font ref="style:ШрифтОбычныйПолужирный18РМК" kind="StyleItem"/>
+							<ContextMenu name="ТекущийВесКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ТекущийВесРасширеннаяПодсказка" id="16"/>
+						</LabelField>
+						<Button name="ОбновитьВес" id="17">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<Width>4</Width>
+							<Height>2</Height>
+							<CommandName>Form.Command.ОбновитьВес</CommandName>
+							<ExtendedTooltip name="ОбновитьВесРасширеннаяПодсказка" id="18"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<PictureDecoration name="ДекорацияРисунок" id="22">
+					<Visible>false</Visible>
+					<Width>41</Width>
+					<Height>10</Height>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<PictureSize>Proportionally</PictureSize>
+					<Border width="1">
+						<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+					</Border>
+					<ContextMenu name="ДекорацияРисунокКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДекорацияРисунокРасширеннаяПодсказка" id="24"/>
+				</PictureDecoration>
+				<UsualGroup name="КартинкаСКнопками" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка с кнопками</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="КартинкаСКнопкамиРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<PictureField name="ИзображениеТовара" id="34">
+							<DataPath>ИзображениеТовара</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>46</Width>
+							<Height>11</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<PictureSize>Proportionally</PictureSize>
+							<Border width="2">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+							</Border>
+							<ContextMenu name="ИзображениеТовараКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ИзображениеТовараРасширеннаяПодсказка" id="36"/>
+						</PictureField>
+						<UsualGroup name="ГруппаКоманды" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команды</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="29"/>
+							<ChildItems>
+								<Button name="ДобавитьТовар" id="30">
+									<Type>UsualButton</Type>
+									<Width>20</Width>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ДобавитьТовар</CommandName>
+									<Font ref="style:ШрифтПоляВводаРМК" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Добавить</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДобавитьТоварРасширеннаяПодсказка" id="31"/>
+								</Button>
+								<Button name="ОтменаДобавления" id="32">
+									<Type>UsualButton</Type>
+									<Width>20</Width>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.StandardCommand.Close</CommandName>
+									<Font ref="style:ШрифтПоляВводаРМК" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отмена</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОтменаДобавленияРасширеннаяПодсказка" id="33"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоКассира</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТекущийВес" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий вес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.Число15_3РМК</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭлектронныеВесы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронные весы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.ПодключаемоеОборудованиеРМК</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторФормыВладельца" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор формы владельца</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИзображениеТовара" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изображение товара</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДобавлениеПодтверждено" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавление подтверждено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветаФормы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвета формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ДляОбучения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для обучения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьВес" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить вес</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить вес</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьВес</Action>
+		</Command>
+		<Command name="ДобавитьТовар" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить товар</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ДобавитьТовар</Action>
+		</Command>
+	</Commands>
+</Form>

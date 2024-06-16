@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandsVisibility>
+		<Command name="Document.ЗаявкаНаВыпускКиЗГИСМ.Command.ЗаявкиНаВыпускКиЗ">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаявкаНаВыпускКиЗГИСМ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.УведомлениеОПоступленииМаркированныхТоваровГИСМ.Command.УведомлениеОПоступленииМаркированныхТоваровГИСМ">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ.Command.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.УведомлениеОбИмпортеМаркированныхТоваровГИСМ.Command.УведомлениеОбИмпортеМаркированныхТоваровГИСМ">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.УведомлениеОПоступленииМаркированныхТоваровГИСМ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.УведомлениеОбИмпортеМаркированныхТоваровГИСМ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.УведомлениеОбОтгрузкеМаркированныхТоваровГИСМ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.УведомлениеОбОтгрузкеМаркированныхТоваровГИСМ.Command.УведомлениеОбОтгрузкеМаркированныхТоваровГИСМ">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПеремаркировкаТоваровГИСМ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.УведомлениеОСписанииКиЗГИСМ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.УведомлениеОСписанииКиЗГИСМ.Command.УведомленияОСписанииКиЗ">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.АнализРасхожденийПриПоступленииКиЗ.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:c4ba5a76-6f1b-41fa-84e2-59c9b6c59dad">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:e63e9f9d-8d86-4866-adbd-13ee293dc282">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:0351b1d9-612f-4af2-83eb-cc2cb6d9449d">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="0:0351b1d9-612f-4af2-83eb-cc2cb6d9449d">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.ЗаявкаНаВыпускКиЗГИСМ.Command.ЗаявкиНаВыпускКиЗ">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаявкаНаВыпускКиЗГИСМ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УведомлениеОПоступленииМаркированныхТоваровГИСМ.Command.УведомлениеОПоступленииМаркированныхТоваровГИСМ">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ.Command.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УведомлениеОбИмпортеМаркированныхТоваровГИСМ.Command.УведомлениеОбИмпортеМаркированныхТоваровГИСМ">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УведомлениеОПоступленииМаркированныхТоваровГИСМ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УведомлениеОбИмпортеМаркированныхТоваровГИСМ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УведомлениеОбОтгрузкеМаркированныхТоваровГИСМ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УведомлениеОбОтгрузкеМаркированныхТоваровГИСМ.Command.УведомлениеОбОтгрузкеМаркированныхТоваровГИСМ">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПеремаркировкаТоваровГИСМ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УведомлениеОСписанииКиЗГИСМ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УведомлениеОСписанииКиЗГИСМ.Command.УведомленияОСписанииКиЗ">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:0351b1d9-612f-4af2-83eb-cc2cb6d9449d">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.Сервис</Group>
+	</GroupsOrder>
+</CommandInterface>

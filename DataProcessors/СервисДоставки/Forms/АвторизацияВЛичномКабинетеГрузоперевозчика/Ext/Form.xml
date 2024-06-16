@@ -1,0 +1,955 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<AutoURL>false</AutoURL>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаРеквизиты" id="166">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРеквизитыРасширеннаяПодсказка" id="167"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаУпрощенная" id="162">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа упрощенная</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУпрощеннаяРасширеннаяПодсказка" id="163"/>
+					<ChildItems>
+						<LabelField name="Организация" id="13">
+							<DataPath>Организация</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="15"/>
+						</LabelField>
+						<LabelField name="Перевозчик" id="16">
+							<DataPath>Перевозчик</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ПеревозчикКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПеревозчикРасширеннаяПодсказка" id="18"/>
+						</LabelField>
+						<UsualGroup name="ГруппаАвторизация" id="7">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа авторизация</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАвторизацияРасширеннаяПодсказка" id="8">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<MaxWidth>30</MaxWidth>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Укажите данные авторизации перевозчика</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<ChildItems>
+								<UsualGroup name="ГруппаДанныхАвторизации" id="35">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа данных авторизации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДанныхАвторизацииРасширеннаяПодсказка" id="36">
+										<AutoMaxWidth>false</AutoMaxWidth>
+									</ExtendedTooltip>
+									<ChildItems>
+										<UsualGroup name="ГруппаЛогинИПароль" id="33">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Авторизация по логину и паролю</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>style:FormTextColor</TitleTextColor>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="ГруппаЛогинИПарольРасширеннаяПодсказка" id="34"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаЛогин" id="9">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа логин</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаЛогинРасширеннаяПодсказка" id="10"/>
+													<ChildItems>
+														<InputField name="Логин" id="1">
+															<DataPath>Логин</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>30</MaxWidth>
+															<InputHint>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Логин</v8:content>
+																</v8:item>
+															</InputHint>
+															<ContextMenu name="ЛогинКонтекстноеМеню" id="2"/>
+															<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="3"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаПароль" id="11">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа пароль</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаПарольРасширеннаяПодсказка" id="12"/>
+													<ChildItems>
+														<InputField name="Пароль" id="4">
+															<DataPath>Пароль</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>30</MaxWidth>
+															<InputHint>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль</v8:content>
+																</v8:item>
+															</InputHint>
+															<ContextMenu name="ПарольКонтекстноеМеню" id="5"/>
+															<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="6"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаТокен" id="21">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Авторизация по токену</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>style:FormTextColor</TitleTextColor>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="ГруппаТокенРасширеннаяПодсказка" id="22"/>
+											<ChildItems>
+												<InputField name="Токен" id="23">
+													<DataPath>Токен</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>30</MaxWidth>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Токен/код</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="ТокенКонтекстноеМеню" id="24"/>
+													<ExtendedTooltip name="ТокенРасширеннаяПодсказка" id="25"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="ДекорацияНекорректныеДанныеАвторизации" id="37">
+									<TextColor>style:ПоясняющийОшибкуТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Некорректные данные авторизации</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияНекорректныеДанныеАвторизацииКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ДекорацияНекорректныеДанныеАвторизацииРасширеннаяПодсказка" id="39"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаПравоДоступа" id="26">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительное право</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>style:FormTextColor</TitleTextColor>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаПравоДоступаРасширеннаяПодсказка" id="27">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<MaxWidth>30</MaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Некоторые сервисы позволяют авторизовываться в разрезе нескольких описаний прав.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<ChildItems>
+										<InputField name="ПравоДоступа" id="28">
+											<DataPath>ПравоДоступа</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Описание права</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>30</MaxWidth>
+											<ListChoiceMode>true</ListChoiceMode>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Описание</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="ПравоДоступаКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="ПравоДоступаРасширеннаяПодсказка" id="30"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаМастер" id="164">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа мастер</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаМастерРасширеннаяПодсказка" id="165"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаШапкаФормы" id="50">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шапка формы</v8:content>
+								</v8:item>
+							</Title>
+							<Height>5</Height>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаШапкаФормыРасширеннаяПодсказка" id="51"/>
+							<ChildItems>
+								<PictureDecoration name="ЛоготипОператора" id="52">
+									<Width>5</Width>
+									<MaxWidth>2</MaxWidth>
+									<Height>2</Height>
+									<MaxHeight>2</MaxHeight>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Логотип оператора</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<PictureSize>Proportionally</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.ЛоготипСервисДоставкиКурьерика</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ЛоготипОператораКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ЛоготипОператораРасширеннаяПодсказка" id="54"/>
+								</PictureDecoration>
+								<LabelDecoration name="ПодсказкаФормы" id="55">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>39</MaxWidth>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для подключения организации  к сервису 1С:Курьерика, выполните следующие шаги:</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<ContextMenu name="ПодсказкаФормыКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ПодсказкаФормыРасширеннаяПодсказка" id="57"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="ГруппаСтраницы" id="58">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа страницы</v8:content>
+								</v8:item>
+							</Title>
+							<Width>50</Width>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="59"/>
+							<ChildItems>
+								<Page name="ГруппаЭтапыПодключения" id="62">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа этапы подключения</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalSpacing>OneAndHalf</VerticalSpacing>
+									<ExtendedTooltip name="ГруппаЭтапыПодключенияРасширеннаяПодсказка" id="63"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаКопированиеРеквизитов" id="64">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа копирование реквизитов</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<VerticalSpacing>None</VerticalSpacing>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаКопированиеРеквизитовРасширеннаяПодсказка" id="65"/>
+											<ChildItems>
+												<PictureDecoration name="КартинкаЭтап1" id="66">
+													<Height>1</Height>
+													<GroupVerticalAlign>Top</GroupVerticalAlign>
+													<Picture>
+														<xr:Ref>CommonPicture.Этап1СинийБЭД</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="КартинкаЭтап1КонтекстноеМеню" id="67"/>
+													<ExtendedTooltip name="КартинкаЭтап1РасширеннаяПодсказка" id="68"/>
+												</PictureDecoration>
+												<UsualGroup name="ГруппаРеквизитыОрганизации" id="69">
+													<Group>Vertical</Group>
+													<VerticalSpacing>Half</VerticalSpacing>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаРеквизитыОрганизацииРасширеннаяПодсказка" id="70"/>
+													<ChildItems>
+														<LabelDecoration name="ГиперссылкаСкопироватьРеквизитыОрганизации" id="71">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Font ref="style:УвеличенныйШрифтБЭД" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Скопируйте название и идентификатор организации.</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Воспользуйтесь буфером обмена для копирования информации.</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+															<ContextMenu name="ГиперссылкаСкопироватьРеквизитыОрганизацииКонтекстноеМеню" id="72"/>
+															<ExtendedTooltip name="ГиперссылкаСкопироватьРеквизитыОрганизацииРасширеннаяПодсказка" id="73">
+																<AutoMaxWidth>false</AutoMaxWidth>
+															</ExtendedTooltip>
+														</LabelDecoration>
+														<UsualGroup name="ГруппаНаименованиеОрганизации" id="74">
+															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНаименованиеОрганизацииРасширеннаяПодсказка" id="75"/>
+															<ChildItems>
+																<InputField name="НаименованиеОрганизации" id="76">
+																	<DataPath>НаименованиеОрганизации</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<TitleTextColor>style:ПоясняющийТекст</TitleTextColor>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<TextColor>web:Gray</TextColor>
+																	<ContextMenu name="НаименованиеОрганизацииКонтекстноеМеню" id="77"/>
+																	<ExtendedTooltip name="НаименованиеОрганизацииРасширеннаяПодсказка" id="78"/>
+																</InputField>
+																<Button name="СкопироватьНаименованиеОрганизации" id="79">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.СкопироватьНаименованиеОрганизации</CommandName>
+																	<ExtendedTooltip name="СкопироватьНаименованиеОрганизацииРасширеннаяПодсказка" id="80"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаИдентификаторОрганизации" id="81">
+															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаИдентификаторОрганизацииРасширеннаяПодсказка" id="82"/>
+															<ChildItems>
+																<InputField name="ИдентификаторОрганизации" id="83">
+																	<DataPath>ИдентификаторОрганизации</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<TitleTextColor>style:ПоясняющийТекст</TitleTextColor>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<TextColor>web:Gray</TextColor>
+																	<ContextMenu name="ИдентификаторОрганизацииКонтекстноеМеню" id="84"/>
+																	<ExtendedTooltip name="ИдентификаторОрганизацииРасширеннаяПодсказка" id="85"/>
+																</InputField>
+																<Button name="СкопироватьИдентификаторОрганизации" id="86">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.СкопироватьИдентификаторОрганизации</CommandName>
+																	<ExtendedTooltip name="СкопироватьИдентификаторОрганизацииРасширеннаяПодсказка" id="87"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПереходНаСайтОператора" id="88">
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПереходНаСайтОператораРасширеннаяПодсказка" id="89"/>
+											<ChildItems>
+												<PictureDecoration name="КартинкаЭтап2" id="90">
+													<Picture>
+														<xr:Ref>CommonPicture.Этап2СинийБЭД</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="КартинкаЭтап2КонтекстноеМеню" id="91"/>
+													<ExtendedTooltip name="КартинкаЭтап2РасширеннаяПодсказка" id="92"/>
+												</PictureDecoration>
+												<UsualGroup name="ГруппаПереходПоСсылке" id="93">
+													<Group>Vertical</Group>
+													<VerticalSpacing>Half</VerticalSpacing>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаПереходПоСсылкеРасширеннаяПодсказка" id="94"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияПереходНаСайтОператора" id="95">
+															<Width>50</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Font ref="style:УвеличенныйШрифтБЭД" kind="StyleItem"/>
+															<Title formatted="true">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;font Arial&gt;&lt;fontsize 11&gt;&lt;font Arial&gt;&lt;fontsize 11&gt;Перейдите&lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt; &lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt;&lt;color #1155cc&gt;&lt;link https://webforms.pipedrive.com/f/cku3YRfixs0q77epMjhkLsCJ7sjHXRLYW7BBKfk0VPoE7eGhxKOxuR7NSjhJv0vdGH&gt;по&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt;&lt;color #1155cc&gt;&lt;link https://webforms.pipedrive.com/f/cku3YRfixs0q77epMjhkLsCJ7sjHXRLYW7BBKfk0VPoE7eGhxKOxuR7NSjhJv0vdGH&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt;&lt;color #1155cc&gt;&lt;link https://webforms.pipedrive.com/f/cku3YRfixs0q77epMjhkLsCJ7sjHXRLYW7BBKfk0VPoE7eGhxKOxuR7NSjhJv0vdGH&gt;ссылке&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt; &lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt;и&lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt; &lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt;заполните&lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt; &lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt;короткую&lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt; &lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 11&gt;анкету.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Прежде чем перейти по ссылке, пожалуйста, скопируйте идентификатор компании. 
+После отправки анкеты менеджер свяжется с вами, чтобы уточнить детали.</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+															<ContextMenu name="ДекорацияПереходНаСайтОператораКонтекстноеМеню" id="96"/>
+															<ExtendedTooltip name="ДекорацияПереходНаСайтОператораРасширеннаяПодсказка" id="97">
+																<AutoMaxWidth>false</AutoMaxWidth>
+															</ExtendedTooltip>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаОжиданиеРегистрации" id="101">
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОжиданиеРегистрацииРасширеннаяПодсказка" id="102"/>
+											<ChildItems>
+												<PictureDecoration name="КартинкаЭтап3" id="103">
+													<Picture>
+														<xr:Ref>CommonPicture.Этап3СинийБЭД</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="КартинкаЭтап3КонтекстноеМеню" id="104"/>
+													<ExtendedTooltip name="КартинкаЭтап3РасширеннаяПодсказка" id="105"/>
+												</PictureDecoration>
+												<UsualGroup name="ГруппаОжиданиеПисьма" id="171">
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаОжиданиеПисьмаРасширеннаяПодсказка" id="172"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияОжиданиеРегистрационныхДанных" id="106">
+															<Width>50</Width>
+															<Font ref="style:УвеличенныйШрифтБЭД" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ожидайте получения письма с регистрационными данными.</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+															<ContextMenu name="ДекорацияОжиданиеРегистрационныхДанныхКонтекстноеМеню" id="107"/>
+															<ExtendedTooltip name="ДекорацияОжиданиеРегистрационныхДанныхРасширеннаяПодсказка" id="108">
+																<AutoMaxWidth>false</AutoMaxWidth>
+															</ExtendedTooltip>
+														</LabelDecoration>
+														<LabelDecoration name="ДекорацияУточнениеСтатусаЗаявки" id="168">
+															<Width>30</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<TextColor>style:ПоясняющийТекст</TextColor>
+															<Title formatted="true">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Уточнить статус заявки можно по электронной почте 1С: Курьерика &lt;link support@courierica.ru&gt;support@courierica.ru&lt;/&gt;.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияУточнениеСтатусаЗаявкиКонтекстноеМеню" id="169"/>
+															<ExtendedTooltip name="ДекорацияУточнениеСтатусаЗаявкиРасширеннаяПодсказка" id="170"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаВводРегистрационныхДанных" id="109">
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВводРегистрационныхДанныхРасширеннаяПодсказка" id="110"/>
+											<ChildItems>
+												<PictureDecoration name="КартинкаЭтап4" id="111">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация1</v8:content>
+														</v8:item>
+													</Title>
+													<Picture>
+														<xr:Ref>CommonPicture.Этап4СинийБЭД</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="КартинкаЭтап4КонтекстноеМеню" id="112"/>
+													<ExtendedTooltip name="КартинкаЭтап4РасширеннаяПодсказка" id="113"/>
+												</PictureDecoration>
+												<UsualGroup name="ГруппаРегистрационныеДанные" id="114">
+													<Group>Vertical</Group>
+													<VerticalSpacing>Half</VerticalSpacing>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаРегистрационныеДанныеРасширеннаяПодсказка" id="115"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияВводРегистрационныхДанных" id="116">
+															<Width>50</Width>
+															<Font ref="style:УвеличенныйШрифтБЭД" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Введите полученные регистрационные данные и нажмите кнопку «Подключить».</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Скопируйте реквизиты доступа (логин и пароль) из полученного письма. Вставьте их в соответствующие поля.</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+															<ContextMenu name="ДекорацияВводРегистрационныхДанныхКонтекстноеМеню" id="117"/>
+															<ExtendedTooltip name="ДекорацияВводРегистрационныхДанныхРасширеннаяПодсказка" id="118">
+																<AutoMaxWidth>false</AutoMaxWidth>
+															</ExtendedTooltip>
+														</LabelDecoration>
+														<InputField name="ИмяПользователя" id="119">
+															<DataPath>Логин</DataPath>
+															<InputHint>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Введите логин</v8:content>
+																</v8:item>
+															</InputHint>
+															<ContextMenu name="ИмяПользователяКонтекстноеМеню" id="120"/>
+															<ExtendedTooltip name="ИмяПользователяРасширеннаяПодсказка" id="121"/>
+														</InputField>
+														<InputField name="Пароль1" id="122">
+															<DataPath>Пароль</DataPath>
+															<PasswordMode>true</PasswordMode>
+															<InputHint>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Введите пароль</v8:content>
+																</v8:item>
+															</InputHint>
+															<ContextMenu name="Пароль1КонтекстноеМеню" id="123"/>
+															<ExtendedTooltip name="Пароль1РасширеннаяПодсказка" id="124"/>
+														</InputField>
+														<LabelDecoration name="ДекорацияНекорректныеДанныеАвторизацииМастер" id="151">
+															<TextColor>style:ПоясняющийОшибкуТекст</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Некорректные данные авторизации</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияНекорректныеДанныеАвторизацииМастерКонтекстноеМеню" id="152"/>
+															<ExtendedTooltip name="ДекорацияНекорректныеДанныеАвторизацииМастерРасширеннаяПодсказка" id="153"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="ГруппаКомандыФормы" id="160">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команды формы</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="ГруппаКомандыФормыРасширеннаяПодсказка" id="161"/>
+			<ChildItems>
+				<Button name="Изменить" id="156">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.Изменить</CommandName>
+					<ExtendedTooltip name="ИзменитьРасширеннаяПодсказка" id="157"/>
+				</Button>
+				<Button name="Подключить" id="145">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.Подключить</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПодключитьРасширеннаяПодсказка" id="146"/>
+				</Button>
+				<Button name="Закрыть" id="154">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="155"/>
+				</Button>
+				<Button name="Справка" id="149">
+					<Type>CommandBarButton</Type>
+					<Visible>false</Visible>
+					<Representation>Picture</Representation>
+					<Enabled>false</Enabled>
+					<Width>3</Width>
+					<CommandName>Form.StandardCommand.Help</CommandName>
+					<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="150"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СервисДоставки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Логин" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Пароль" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПравоДоступа" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Право доступа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Организация" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.ОрганизацияСервисДоставки</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="Перевозчик" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перевозчик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Токен" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Токен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИдентификаторСервиса" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор сервиса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Авторизован" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Авторизован</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФоновоеЗаданиеПолучитьНастройкиАвторизации" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фоновое задание получить настройки авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ФоновоеЗаданиеЗаписатьНастройкиАвторизации" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фоновое задание записать настройки авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТипАвторизации" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипГрузоперевозки" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип грузоперевозки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторОрганизации" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор (ключ)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаименованиеОрганизации" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование (название)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФоновоеЗаданиеПолучитьПунктыВыдачиКлиента" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фоновое задание получить пункты выдачи клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Изменить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить данные авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Изменить</Action>
+		</Command>
+		<Command name="Подключить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подключить</Action>
+		</Command>
+		<Command name="СкопироватьИдентификаторОрганизации" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать идентификатор организации</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.СкопироватьВБуферОбмена</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>СкопироватьИдентификаторОрганизации</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СкопироватьНаименованиеОрганизации" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать наименование организации</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.СкопироватьВБуферОбмена</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>СкопироватьНаименованиеОрганизации</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>

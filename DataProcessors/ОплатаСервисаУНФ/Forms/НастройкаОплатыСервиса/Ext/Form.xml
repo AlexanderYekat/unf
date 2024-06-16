@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="24"/>
+			<ChildItems>
+				<LabelDecoration name="ОписаниеРаздела" id="25">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка учетной системы биллинга.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ОписаниеРазделаРасширеннаяПодсказка" id="27"/>
+				</LabelDecoration>
+				<CommandBar name="ГруппаСправка" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справка</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="29"/>
+					<ChildItems>
+						<Button name="Справка" id="30">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="31"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматическое выставление счетов</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<Table name="СвязьКодаАбонентаСправочникОрганизации" id="1">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<HeightControlVariant>UseContentHeight</HeightControlVariant>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СвязьКодаАбонентаСправочникОрганизации</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SearchHistory</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СвязьКодаАбонентаСправочникОрганизацииКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="СвязьКодаАбонентаСправочникОрганизацииКоманднаяПанель" id="3">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СвязьКодаАбонентаСправочникОрганизацииРасширеннаяПодсказка" id="4">
+						<Width>45</Width>
+						<HorizontalStretch>false</HorizontalStretch>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Данное приложение выбрано в роли биллинговой учетной системы в менеджере сервиса.
+Обслуживаемые абоненты смогут получать счет на оплату из своего приложения.
+Необходимо указать организацию от имени которой будут выставлены счета.</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+					<SearchStringAddition name="СвязьКодаАбонентаСправочникОрганизацииСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>СвязьКодаАбонентаСправочникОрганизации</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СвязьКодаАбонентаСправочникОрганизацииСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="СвязьКодаАбонентаСправочникОрганизацииСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СвязьКодаАбонентаСправочникОрганизацииСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>СвязьКодаАбонентаСправочникОрганизации</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СвязьКодаАбонентаСправочникОрганизацииСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="СвязьКодаАбонентаСправочникОрганизацииСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СвязьКодаАбонентаСправочникОрганизацииУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>СвязьКодаАбонентаСправочникОрганизации</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СвязьКодаАбонентаСправочникОрганизацииУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="СвязьКодаАбонентаСправочникОрганизацииУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="СвязьКодаАбонентаСправочникОрганизацииПредставлениеАбонента" id="14">
+							<DataPath>СвязьКодаАбонентаСправочникОрганизации.ПредставлениеАбонента</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СвязьКодаАбонентаСправочникОрганизацииПредставлениеАбонентаКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="СвязьКодаАбонентаСправочникОрганизацииПредставлениеАбонентаРасширеннаяПодсказка" id="16"/>
+						</InputField>
+						<InputField name="СвязьКодаАбонентаСправочникОрганизацииКодАбонента" id="17">
+							<DataPath>СвязьКодаАбонентаСправочникОрганизации.КодАбонента</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СвязьКодаАбонентаСправочникОрганизацииКодАбонентаКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="СвязьКодаАбонентаСправочникОрганизацииКодАбонентаРасширеннаяПодсказка" id="19"/>
+						</InputField>
+						<InputField name="СвязьКодаАбонентаСправочникОрганизацииОрганизация" id="20">
+							<DataPath>СвязьКодаАбонентаСправочникОрганизации.Организация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="СвязьКодаАбонентаСправочникОрганизацииОрганизацияКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="СвязьКодаАбонентаСправочникОрганизацииОрганизацияРасширеннаяПодсказка" id="22"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СвязьКодаАбонентаСправочникОрганизации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связь кода абонента справочник организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ПредставлениеАбонента" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Абонент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодАбонента" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код абонента</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Организация" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НаборКонстант" id="2">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>
